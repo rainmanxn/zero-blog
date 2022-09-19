@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    // переменные обязательно должны иметь тип
+    "noImplicitAny": true,
+    // для абсолютного импорта
+    "baseUrl": ".",
+    "module": "ESNext",
+    // в какую спецификацию компилируем
+    "target": "es5",
+    "jsx": "react-jsx",
+    // компилятор обрабатывает js помимо ts
+    "allowJs": true,
+    "moduleResolution": "node",
+    // allow to use normal imports Instead of common js (require etc..)
+    "esModuleInterop": true,
+    // aloow to use imports without *
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
