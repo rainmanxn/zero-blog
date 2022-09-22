@@ -5,6 +5,9 @@
     "noImplicitAny": true,
     // для абсолютного импорта
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"],
+    },
     "module": "ESNext",
     // в какую спецификацию компилируем
     "target": "es5",
