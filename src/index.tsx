@@ -5,10 +5,10 @@ import 'shared/config/i18n/i18n';
 import { App } from './app/App';
 
 render(
-  <BrowserRouter>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </BrowserRouter>,
-  document.getElementById('root')
+    <BrowserRouter>
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
+    </BrowserRouter>,
+    document.getElementById('root'),
 );
