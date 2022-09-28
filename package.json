@@ -11,7 +11,8 @@
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "unit": "jest --config ./config/jest/jest.config.ts",
+    "analyze": "webpack --env analyze=1 mode=development"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@svgr/webpack": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.2",
@@ -38,6 +40,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "^5.28.0",
+    "@types/webpack-bundle-analyzer": "^4.4.1",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.12.1",
@@ -56,6 +59,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "mini-css-extract-plugin": "^2.5.3",
     "sass": "^1.49.9",
@@ -68,6 +72,7 @@
     "typescript": "^4.8.3",
     "typescript-plugin-css-modules": "^3.4.0",
     "webpack": "^5.69.1",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   }
