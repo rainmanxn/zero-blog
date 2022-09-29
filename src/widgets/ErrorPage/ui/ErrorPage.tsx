@@ -23,5 +23,5 @@ export const ErrorPage = ({ className }: ErrorPageProps) => {
                 {t('Обонвить страницу')}
             </Button>
         </div>
-    )
-}
+    );
+};

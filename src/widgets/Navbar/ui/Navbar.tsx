@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 
@@ -7,23 +8,27 @@ interface NavbarProps {
   className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => (
-    <div className={classNames(styles.Navbar, {}, [className])}>
-        <div className={styles.links}>
-            <AppLink
-                theme={AppLinkTheme.SECONDARY}
-                to="/"
-                className={styles.mainLink}
-            >
-                Главная
-            </AppLink>
-            <AppLink
-                theme={AppLinkTheme.SECONDARY}
-                to="/about"
-                className={styles.mainLink}
-            >
-                О сайте
-            </AppLink>
+export const Navbar = ({ className }: NavbarProps) => {
+    const { t } = useTranslation();
+
+    return (
+        <div className={classNames(styles.Navbar, {}, [className])}>
+            <div className={styles.links}>
+                <AppLink
+                    theme={AppLinkTheme.SECONDARY}
+                    to="/"
+                    className={styles.mainLink}
+                >
+                    {t('Главная страница')}
+                </AppLink>
+                <AppLink
+                    theme={AppLinkTheme.SECONDARY}
+                    to="/about"
+                    className={styles.mainLink}
+                >
+                    {t('О сайте')}
+                </AppLink>
+            </div>
         </div>
-    </div>
-);
+    );
+};
