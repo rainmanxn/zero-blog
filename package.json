@@ -16,7 +16,8 @@
     "test:ui:ok": "npm loki approve",
     "analyze": "webpack --env analyze=1 mode=development",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "storybook:build": "build-storybook -c ./config/storybook"
+    "storybook:build": "build-storybook -c ./config/storybook",
+    "test:ui:ci": "npx loki --requireReference --reactUri file:./storybook-static"
   },
   "keywords": [],
   "author": "",
