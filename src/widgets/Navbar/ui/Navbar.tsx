@@ -6,11 +6,6 @@ interface NavbarProps {
   className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
-    return (
-        <div className={classNames(styles.Navbar, {}, [className])}>
-            <div className={styles.links}>
-            </div>
-        </div>
-    );
-};
+export const Navbar = ({ className }: NavbarProps) => (
+    <div className={classNames(styles.Navbar, {}, [className])} />
+);
