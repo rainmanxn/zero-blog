@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
@@ -29,7 +30,8 @@ export const Navbar = ({ className }: NavbarProps) => {
                 { t('Войти')}
             </Button>
             <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                guwcewnghouwemhguriowhmegunvhwueiogvhweoivhcgriuenow
+                Login page
             </Modal>
         </div>
-)};
+    );
+};
