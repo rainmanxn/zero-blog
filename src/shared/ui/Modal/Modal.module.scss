@@ -7,12 +7,12 @@
     opacity: 0;
     pointer-events: none;
     z-index: -1;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .Modal.dark {
-  --bg-color: #090949;
-  --primary-color: #04ff04;
+    --bg-color: #090949;
+    --primary-color: #04ff04;
 }
 
 .overlay {
@@ -28,24 +28,23 @@
     padding: 20px;
     border-radius: 12px;
     background: var(--bg-color);
-
     transition: 0.3s transform;
     transform: scale(0.5);
     max-width: 60%;
 }
 
 .opened {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: var(--modal-z-index);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: var(--modal-z-index);
 
-  .content {
-    transform: scale(1);
-  }
+    .content {
+        transform: scale(1);
+    }
 }
 
 .isClosing {
-  .content {
-      transform: scale(0.2);
+    .content {
+        transform: scale(0.2);
     }
 }
