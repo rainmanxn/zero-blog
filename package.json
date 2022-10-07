@@ -7,7 +7,7 @@
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack build --env mode=production",
     "build:dev": "webpack build --env mode=development",
-    "lint:ts": " eslint \"**/*.{ts,tsx}\"",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
