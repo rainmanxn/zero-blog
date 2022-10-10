@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3000",
+    "start:dev:server": "node ./json-server/index.js",
     "build:prod": "webpack build --env mode=production",
     "build:dev": "webpack build --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
@@ -94,7 +95,8 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
     "loki": "^0.30.3",
-    "reg-cli": "^0.17.6"
+    "reg-cli": "^0.17.6",
+    "json-server": "^0.17.0"
   },
   "loki": {
     "configurations": {
