@@ -43,3 +43,9 @@
         transform: scale(0.2);
     }
 }
+
+.isOpened {
+    .content {
+        transform: scale(1);
+    }
+}
